@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 
-input[type='email'], input[type='password'],input[type='text']{
-    @apply w-full border my-2 bg-none py-2 px-3 rounded-2xl;
+input[type='email'], input[type='password'],input[type='text'],input[type='time'],input[type='number'],textarea{
+    @apply w-full border my-2 bg-none py-2 px-3 rounded-2xl  border-green-300;
 }
 
 
 button.primary{
-    @apply bg-primary p-2 w-full rounded-2xl text-white;
+    @apply bg-primary p-2 w-full rounded-2xl text-white border border-green-300;
 
 }
