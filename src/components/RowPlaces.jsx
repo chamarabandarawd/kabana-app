@@ -1,10 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const RowPlaces = ({ place }) => {
+
   return (
-    <div className='h-40 bg-gray-100 rounded-xl grid grid-cols-[1fr,3fr] p-3 gap-3 max-w-4xl'>
-      <div className=" border rounded-xl">
-        <img src={place.photos[0]} alt='image' className='rounded-xl object-cover w-full ' />
+    <Link 
+    to={place._id}
+    className='h-40 bg-gray-100 rounded-xl grid grid-cols-[1fr,3fr] p-3 gap-3 max-w-4xl '>
+      <div className=" border rounded-xl object-cover">
+        <img src={place.photos[0]} alt='image' className='rounded-xl object-cover overflow-hidden w-full h-full ' />
       </div>
       <div>
         <h2 className='text-xl font-bold'>{place.title}</h2>
@@ -16,7 +20,7 @@ const RowPlaces = ({ place }) => {
 
           Price : {place.price} LKR/per night</p>
       </div>
-    </div>
+    </Link>
   )
 }
 

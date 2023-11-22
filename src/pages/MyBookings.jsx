@@ -1,8 +1,12 @@
 import React from 'react'
+import UserAccountHeader from '../components/UserAccountHeader'
 
 const MyBookings = () => {
   return (
-    <div>MyBookings</div>
+    <div className='mt-8'>
+      <UserAccountHeader/>
+      Bookings
+    </div>
   )
 }
 
